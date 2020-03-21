@@ -7,7 +7,7 @@ class EmailAddressParser
 
   def initialize(email)
     @parse = email
-    @parcer.split
+    @parse.split
 
   end
 end
