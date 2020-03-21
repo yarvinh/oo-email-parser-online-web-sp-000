@@ -7,7 +7,7 @@ class EmailAddressParser
 
   def initialize(email)
     @parse = email.split(/\s|,\s/)
-    @parse.uniq { |f| f[/\d+$/] }.map { |p| p.split(':').last }
+    @parse.find_all { |x| a.count(x) == 1 }
 
 
   end
